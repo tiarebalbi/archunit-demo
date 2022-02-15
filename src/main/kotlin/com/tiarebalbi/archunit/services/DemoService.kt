@@ -2,6 +2,7 @@ package com.tiarebalbi.archunit.services
 
 import com.tiarebalbi.archunit.models.Demo
 import com.tiarebalbi.archunit.repositories.DemoRepository
+import com.tiarebalbi.archunit.services.exceptions.ValidationException
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 
@@ -19,7 +20,7 @@ class DemoService(private val demoRepository: DemoRepository) {
         val exists = this.demoRepository.existsByName(demo.name)
         if (exists) {
             logger.warn("Demo > Name: ${demo.name} is duplicated")
-            throw RuntimeException("unable to save record")
+            throw ValidationException("unable to save record")
         }
 
         this.demoRepository.save(demo)
