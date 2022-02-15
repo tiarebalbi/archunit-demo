@@ -3,6 +3,7 @@
 How to write tests to ensure that decisions made on day one are still valid as your software grows.
 
 ---
+[![Build](https://github.com/tiarebalbi/archunit-demo/actions/workflows/build.yml/badge.svg)](https://github.com/tiarebalbi/archunit-demo/actions/workflows/build.yml)
 
 These days, you have so many options on how to start a new project that deciding on how to design the software can be an overwhelming problem. Once decisions are made, you create a set of expectations on how certain things will work and how each piece will interact with the other.
 
