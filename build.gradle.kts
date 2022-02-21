@@ -24,7 +24,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     runtimeOnly("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("com.tngtech.archunit:archunit-junit5:0.22.0")
+    testImplementation("com.tngtech.archunit:archunit-junit5:0.23.0")
 }
 
 tasks.withType<KotlinCompile> {
